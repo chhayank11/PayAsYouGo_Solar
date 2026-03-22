@@ -1,0 +1,1 @@
+CREATE INDEX idx_devices_serial ON devices(serial_number);

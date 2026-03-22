@@ -1,0 +1,8 @@
+CREATE TABLE devices (
+    id BIGSERIAL PRIMARY KEY,
+    serial_number VARCHAR(100) UNIQUE NOT NULL,
+    status VARCHAR(20) NOT NULL,
+    price NUMERIC(10,2) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP
+);
